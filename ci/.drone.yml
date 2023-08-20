@@ -2,6 +2,8 @@
 kind: pipeline
 type: exec
 name: Mirror
+node:
+  type: ubuntu20.04
 steps:
 - name: gitee
   commands:
@@ -9,3 +11,4 @@ steps:
 - name: github
   commands:
     - git push --mirror git@github.com:alvisisme/$DRONE_REPO_NAME
+

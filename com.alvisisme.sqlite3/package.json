@@ -1,0 +1,12 @@
+{
+    "name": "site.alvisisme.sqlite3",
+    "displayName": "Sqlite3 For HoloLens 2",
+    "description": "Sqlite3 For HoloLens 2",
+    "version": "1.0.0",
+    "unity": "2020.3",
+    "author": {
+      "name": "Alvis Zhao",
+      "email": "alvisisme@163.com",
+      "url": "http://www.alvisisme.site"
+    }
+  }

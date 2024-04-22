@@ -4,15 +4,15 @@
 
 ## 测试环境
 
-1. Unity 2020.3.28f1c1
+1. Unity 2020.3.48f1
 1. HoloLens 2 ARM64
 1. Target SDK Version 10.0.19041.0
 1. Visual Studio Version 2019
 
 ## 依赖环境
 
-1. sqlite 3.38.1 源码
-1. sqlite-net 源码
+1. sqlite 3.45.3 源码
+1. sqlite-net v1.9.172 源码
 
 ## 主要步骤
 
@@ -23,11 +23,12 @@
     ** Determine if we are dealing with WinRT, which provides only a subset of
     ** the full Win32 API.
     */
-    // #if !defined(SQLITE_OS_WINRT) && !defined(PLATFORM_WINRT)
+    // #if !defined(SQLITE_OS_WINRT)
     // # define SQLITE_OS_WINRT 0
     // #endif
 
-    # define SQLITE_OS_WINRT 1
+    #define SQLITE_OS_WINRT 1
+
     ```
 
     目前没有找到从 Unity 中控制 C/C++ 源码预编译指令的方法。

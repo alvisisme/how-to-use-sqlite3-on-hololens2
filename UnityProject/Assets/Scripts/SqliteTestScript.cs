@@ -19,6 +19,7 @@ public class SqliteTestScript : MonoBehaviour
         tmp = this.gameObject.GetComponent<TextMeshPro>();
 
         var databasePath = Application.persistentDataPath + "/TestDatabase.db";
+        Debug.Log("[sqlite] creating SQLiteConnection at " + databasePath);
         var db = new SQLiteConnection(databasePath);
         var msg = "";
         Debug.Log("[sqlite] creating database at " + databasePath);
